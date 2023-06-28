@@ -40,6 +40,17 @@ export default {
           date: "1923",
           description: "<p>Nace el Dr. Oswell Earl Spencer.</p>",
         },
+        {
+          title: "Virus Progenitor",
+          date: "1930",
+          description:
+            "<p>Un miembro de la familia Ashford descubre el virus Progenitor.</p>",
+        },
+        {
+          title: "Robert Kendo",
+          date: "1958",
+          description: "<p>Nace Robert Kendo.</p>",
+        },
       ],
     };
   },

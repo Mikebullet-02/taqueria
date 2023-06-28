@@ -5,7 +5,9 @@ import Timeline from "./components/Timeline.vue";
 </script>
 
 <template>
-  <Navbar />
-  <Admins />
-  <Timeline />
+  <div class="bg-white">
+    <Navbar />
+    <Admins />
+    <Timeline />
+  </div>
 </template>
