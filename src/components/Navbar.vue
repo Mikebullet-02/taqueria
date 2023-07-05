@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="sm:bg-white top-0 z-10 sticky w-screen md:w-screen">
+  <div class="bg-black top-0 z-10 sticky w-screen md:w-screen">
     <nav
       class="pl-0 px-6 sm:py-5 mr-4 md:mr-32 mx-auto md:flex md:justify-between md:items-center sm:order-first sm:mr-16 sm:ml-32 md:ml-[20px] lg:mr-[0px] lg:ml-[55px] xl:pl-[90px] 2xl:mr-28"
     >
@@ -8,11 +8,11 @@
         <!-- Mobile menu button -->
         <div
           @click="toggleNav"
-          class="flex md:hidden ml-[300px] sm:ml-[450px] bg-white bg-opacity-70"
+          class="flex md:hidden ml-[300px] sm:ml-[450px] bg-white bg-opacity-0"
         >
           <button
             type="button"
-            class="text-[#003368] hover:text-gray-900 focus:outline-none focus:text-gray-800"
+            class="text-red-800 hover:text-gray-900 focus:outline-none focus:text-gray-800"
             id="mobile-menu-button"
           >
             <svg viewBox="0 0 24 24" class="w-14 h-14 fill-current">
@@ -31,7 +31,7 @@
           <img
             src="../assets/logo_bordes.png"
             class="w-48 2xl:mr-[150px]"
-            alt="Logo ODM envios"
+            alt="Logo Taqueria de Wesker"
           />
           <Links />
         </ul>
@@ -43,12 +43,12 @@
           :class="showMenu ? 'bg-black opacity-25' : ''"
           class="absolute w-screen h-screen md:h-screen md:w-screen"
         ></div>
-        <div class="absolute w-10/12 sm:w-3/4 bg-gray-200" @click="toggleNav">
+        <div class="absolute w-10/12 sm:w-3/4 bg-gray-500" @click="toggleNav">
           <img
             src="../assets/logo_sin_bordes.png"
             class="md:hidden w-full p-8"
             :class="showMenu ? 'flex' : 'hidden'"
-            alto="Logo ODM envios"
+            alto="Logo Taqueria de Wesker"
           />
           <ul
             :class="

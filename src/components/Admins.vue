@@ -1,21 +1,25 @@
 <template>
-  <div class="carousel bg-black">
+  <div class="relative bg-black">
     <div
       class="carousel-item"
       v-for="(profile, index) in profiles"
       :key="index"
       :class="{ active: index === currentSlide }"
     >
-      <img :src="profile.image" :alt="profile.name" class="carousel-image" />
+      <div class="flex justify-center items-center">
+        <img :src="profile.image" :alt="profile.name" class="carousel-image" />
+      </div>
       <div class="carousel-content">
-        <h3 class="carousel-name text-gray-300">{{ profile.name }}</h3>
-        <p class="carousel-profession text-gray-300">
+        <h3 class="carousel-name text-gray-300 text-2xl font-bold text-center">
+          {{ profile.name }}
+        </h3>
+        <p class="carousel-profession text-gray-300 text-center">
           {{ profile.profession }}
         </p>
-        <p class="carousel-bio text-gray-300">{{ profile.bio }}</p>
-        <div class="carousel-links">
+        <p class="carousel-bio text-gray-300 text-center">{{ profile.bio }}</p>
+        <!--<div class="carousel-links text-center">
           <a href="#" class="carousel-link">LinkTree</a>
-        </div>
+        </div>-->
       </div>
     </div>
     <button class="carousel-prev" @click="prevSlide">&#8249;</button>
@@ -23,92 +27,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      currentSlide: 0,
-      profiles: [
-        {
-          name: "Irene Boyzo",
-          profession: "Ada la mesera",
-          bio: "Actriz y comunicóloga",
-          image: "/src/assets/taco_sin_bordes.png",
-        },
-        {
-          name: "Miguel Delgado",
-          profession: "Leon Salsas Borrachas",
-          bio: "Desarrollador",
-          image: "/src/assets/taco_bordes.png",
-        },
-        {
-          name: "Einar Torres",
-          profession: "Carlos El De La Caja",
-          bio: "Lic. en Administración de Empresas de Entretenimiento y Comunicación",
-          image: "/src/assets/taco_bordes.png",
-        },
-        {
-          name: "JC Guevara",
-          profession: "JCUnited02",
-          bio: "Lic. en Administración de Empresas Turísticas",
-          image: "/src/assets/taco_bordes.png",
-        },
-        {
-          name: "Maritza Salas",
-          profession: "Helenita Insistente",
-          bio: "Consultora MUA",
-          image: "/src/assets/taco_bordes.png",
-        },
-        {
-          name: "Beatriz Zeferino",
-          profession: "Químico Físico Biólogo Bacteriólogo Farmacéutico",
-          bio: "Rebecca Desde La Cocina",
-          image: "/src/assets/taco_bordes.png",
-        },
-        {
-          name: "Virgilio Daniel",
-          profession: "Comunicólogo político",
-          bio: "El Tío Vergil Wesker",
-          image: "/src/assets/taco_bordes.png",
-        },
-        {
-          name: "Betzabeth Tula",
-          profession: "Sherry La Edecán",
-          bio: "Lic. en Educación Primaria",
-          image: "/src/assets/taco_bordes.png",
-        },
-        {
-          name: "Nancy Rose",
-          profession: "Nemesio Botarga",
-          bio: "Cirujano Dentista",
-          image: "/src/assets/taco_bordes.png",
-        },
-        {
-          name: "José Francisco",
-          profession: "???",
-          bio: "Contador Público",
-          image: "/src/assets/taco_bordes.png",
-        },
-      ],
-    };
-  },
-  methods: {
-    nextSlide() {
-      this.currentSlide = (this.currentSlide + 1) % this.profiles.length;
-    },
-    prevSlide() {
-      this.currentSlide =
-        (this.currentSlide - 1 + this.profiles.length) % this.profiles.length;
-    },
-  },
-};
-</script>
-
 <style scoped>
-.carousel {
-  position: relative;
-}
-
 .carousel-item {
   display: none;
 }
@@ -118,13 +37,8 @@ export default {
 }
 
 .carousel-image {
-  width: 100%;
+  width: auto;
   height: auto;
-}
-
-.carousel-name {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .carousel-links {
@@ -146,7 +60,7 @@ export default {
   transform: translateY(-50%);
   padding: 0.5rem;
   color: white;
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 0.2);
   border: none;
   outline: none;
   cursor: pointer;
@@ -183,3 +97,90 @@ export default {
   }
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      currentSlide: 0,
+      profiles: [
+        {
+          name: "Irene Boyzo",
+          profession: "Ada la mesera",
+          bio: "Lic. en Comunicación y Artes Escénicas",
+          image: "/src/assets/Axo/IMG_1299.jpg",
+        },
+        {
+          name: "Miguel Delgado",
+          profession: "Leon Salsas Borrachas",
+          bio: "Lic. en Ciencias de la Informática",
+          image: "/src/assets/taco_bordes.png",
+        },
+        {
+          name: "Einar Torres",
+          profession: "Carlos El De La Caja",
+          bio: "Lic. en Administración de Empresas de Entretenimiento y Comunicación",
+          image: "/src/assets/Axo/IMG_1239.jpg",
+        },
+        {
+          name: "JC Guevara",
+          profession: "JCUnited02",
+          bio: "Lic. en Administración de Empresas Turísticas",
+          image: "/src/assets/Axo/IMG_1541.jpg",
+        },
+        {
+          name: "Maritza Salas",
+          profession: "Helenita Insistente",
+          bio: "Consultora MUA",
+          image: "/src/assets/Axo/IMG_1434.jpg",
+        },
+        {
+          name: "Beatriz Zeferino",
+          profession: "Lic. Químico Farmacéutico Biólogo",
+          bio: "Rebecca Desde La Cocina",
+          image: "/src/assets/taco_bordes.png",
+        },
+        {
+          name: "Virgilio Mendoza",
+          profession: "Lic. en Ciencias de la Comunicación y Análisis Político",
+          bio: "El Tío Vergil Wesker",
+          image: "/src/assets/Axo/IMG_1159.jpg",
+        },
+        {
+          name: "Betzabeth Tula",
+          profession: "Sherry La Edecán",
+          bio: "Lic. en Educación Primaria",
+          image: "/src/assets/taco_bordes.png",
+        },
+        {
+          name: "Alonso Fitta",
+          profession: "Frittangas",
+          bio: "Lic. en Diseño Gráfico",
+          image: "/src/assets/Toy_Fest/Taqueria/IMG_1952.jpg",
+        },
+        {
+          name: "Nancy Lugo",
+          profession: "Nemesio Botarga",
+          bio: "Cirujano Dentista",
+          image: "/src/assets/taco_bordes.png",
+        },
+        {
+          name: "José Francisco",
+          profession: "???",
+          bio: "Lic. en Contaduría Pública",
+          image: "/src/assets/taco_bordes.png",
+        },
+      ],
+    };
+  },
+  methods: {
+    nextSlide() {
+      this.currentSlide = (this.currentSlide + 1) % this.profiles.length;
+    },
+    prevSlide() {
+      this.currentSlide =
+        (this.currentSlide - 1 + this.profiles.length) % this.profiles.length;
+    },
+  },
+};
+</script>
