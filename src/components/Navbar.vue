@@ -43,9 +43,9 @@
           :class="showMenu ? 'bg-black opacity-25' : ''"
           class="absolute w-screen h-screen md:h-screen md:w-screen"
         ></div>
-        <div class="absolute w-10/12 sm:w-3/4 bg-gray-500" @click="toggleNav">
+        <div class="absolute w-10/12 sm:w-3/4 bg-black" @click="toggleNav">
           <img
-            src="../assets/logo_sin_bordes.png"
+            src="../assets/logo_bordes.png"
             class="md:hidden w-full p-8"
             :class="showMenu ? 'flex' : 'hidden'"
             alto="Logo Taqueria de Wesker"

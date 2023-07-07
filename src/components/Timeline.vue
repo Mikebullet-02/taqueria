@@ -1,103 +1,154 @@
 <template>
-  <div class="container mx-auto mt-0 pl-5 bg-black">
-    <h1 class="text-3xl font-bold pt-5 mb-4 text-gray-200">Línea de tiempo</h1>
+  <div class="flex items-center justify-center bg-black">
+    <div class="container mx-auto mt-0 pl-5">
+      <h1 class="text-3xl font-bold pt-5 mb-4 text-gray-200">
+        Línea de tiempo
+      </h1>
 
-    <div class="flex justify-center mb-10">
-      <select
-        v-model="selectedSection"
-        class="mr-2 bg-red-800 hover:bg-red-800 text-white font-bold py-0 px-4 rounded"
-      >
-        <option value="section1">ANTECEDENTES</option>
-        <option value="section2">LA INFECCIÓN</option>
-        <option value="section3">EL FINAL DE UMBRELLA</option>
-        <option value="section4">NUEVAS AMENAZAS</option>
-      </select>
+      <div class="flex justify-center">
+        <select
+          v-model="selectedSection"
+          class="mr-2 bg-red-800 hover:bg-red-800 text-white font-bold py-5 px-5 rounded"
+        >
+          <option value="section1">ANTECEDENTES</option>
+          <option value="section2">LA INFECCIÓN</option>
+          <option value="section3">EL FINAL DE UMBRELLA</option>
+          <option value="section4">NUEVAS AMENAZAS</option>
+        </select>
+      </div>
     </div>
-
-    <ul class="timeline">
-      <li
-        v-if="selectedSection === 'section1'"
-        class="relative mb-8"
-        v-for="(event, index) in section1Events"
-        :key="index"
-      >
-        <div class="timeline-marker"></div>
-        <div class="ml-16">
-          <h3 class="text-xl font-semibold text-gray-200">{{ event.date }}</h3>
-          <p class="text-gray-400 mb-4">{{ event.title }}</p>
-          <div v-html="event.description" class="text-gray-200"></div>
-        </div>
-      </li>
-      <li
-        v-if="selectedSection === 'section2'"
-        class="relative mb-8"
-        v-for="(event, index) in section2Events"
-        :key="index"
-      >
-        <div class="timeline-marker"></div>
-        <div class="ml-16">
-          <h3 class="text-xl font-semibold text-gray-200">{{ event.date }}</h3>
-          <p class="text-gray-400 mb-4">{{ event.title }}</p>
-          <div v-html="event.description" class="text-gray-200"></div>
-        </div>
-      </li>
-      <li
-        v-if="selectedSection === 'section3'"
-        class="relative mb-8"
-        v-for="(event, index) in section3Events"
-        :key="index"
-      >
-        <div class="timeline-marker"></div>
-        <div class="ml-16">
-          <h3 class="text-xl font-semibold text-gray-200">{{ event.date }}</h3>
-          <p class="text-gray-400 mb-4">{{ event.title }}</p>
-          <div v-html="event.description" class="text-gray-200"></div>
-        </div>
-      </li>
-      <li
-        v-if="selectedSection === 'section4'"
-        class="relative mb-8"
-        v-for="(event, index) in section4Events"
-        :key="index"
-      >
-        <div class="timeline-marker"></div>
-        <div class="ml-16">
-          <h3 class="text-xl font-semibold text-gray-200">{{ event.date }}</h3>
-          <p class="text-gray-400 mb-4">{{ event.title }}</p>
-          <div v-html="event.description" class="text-gray-200"></div>
-        </div>
-      </li>
-    </ul>
   </div>
+  <section class="dark:bg-black dark:text-gray-100">
+    <div class="container px-4 py-5 mx-auto space-y-8 lg:max-w-3xl">
+      <div class="space-y-8">
+        <div>
+          <ul class="space-y-4">
+            <li
+              class="space-y-1"
+              v-if="selectedSection === 'section1'"
+              v-for="(event, index) in section1Events"
+              :key="index"
+            >
+              <div class="flex items-center space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="w-5 h-5 fill-current dark:text-red-600"
+                >
+                  <path
+                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                  ></path>
+                  <polygon
+                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                  ></polygon>
+                </svg>
+                <div>
+                  <h3 class="mb-1 text-lg font-bold md:text-xl mt-6">
+                    {{ event.date }}
+                  </h3>
+                  <h4 class="flex font-medium">
+                    {{ event.title }}
+                  </h4>
+                </div>
+              </div>
+              <div v-html="event.description" class="text-gray-200 pl-8"></div>
+            </li>
+            <li
+              class="space-y-1"
+              v-if="selectedSection === 'section2'"
+              v-for="(event, index) in section2Events"
+              :key="index"
+            >
+              <div class="flex items-center space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="w-5 h-5 fill-current dark:text-red-800"
+                >
+                  <path
+                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                  ></path>
+                  <polygon
+                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                  ></polygon>
+                </svg>
+                <div>
+                  <h3 class="mb-1 text-lg font-bold md:text-xl mt-6">
+                    {{ event.date }}
+                  </h3>
+                  <h4 class="flex font-medium">
+                    {{ event.title }}
+                  </h4>
+                </div>
+              </div>
+              <div v-html="event.description" class="text-gray-200 pl-8"></div>
+            </li>
+            <li
+              class="space-y-1"
+              v-if="selectedSection === 'section3'"
+              v-for="(event, index) in section3Events"
+              :key="index"
+            >
+              <div class="flex items-center space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="w-5 h-5 fill-current dark:text-red-800"
+                >
+                  <path
+                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                  ></path>
+                  <polygon
+                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                  ></polygon>
+                </svg>
+                <div>
+                  <h3 class="mb-1 text-lg font-bold md:text-xl mt-6">
+                    {{ event.date }}
+                  </h3>
+                  <h4 class="flex font-medium">
+                    {{ event.title }}
+                  </h4>
+                </div>
+              </div>
+              <div v-html="event.description" class="text-gray-200 pl-8"></div>
+            </li>
+            <li
+              class="space-y-1"
+              v-if="selectedSection === 'section4'"
+              v-for="(event, index) in section4Events"
+              :key="index"
+            >
+              <div class="flex items-center space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="w-5 h-5 fill-current dark:text-red-800"
+                >
+                  <path
+                    d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                  ></path>
+                  <polygon
+                    points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                  ></polygon>
+                </svg>
+                <div>
+                  <h3 class="mb-1 text-lg font-bold md:text-xl mt-6">
+                    {{ event.date }}
+                  </h3>
+                  <h4 class="flex font-medium">
+                    {{ event.title }}
+                  </h4>
+                </div>
+              </div>
+              <div v-html="event.description" class="text-gray-200 pl-8"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
-<style>
-.timeline {
-  list-style-type: none;
-  position: relative;
-}
-
-.timeline:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  bottom: 0;
-  width: 2px;
-  background-color: white;
-  left: 30px;
-  margin-left: -2px;
-}
-
-.timeline-marker {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  transform: translate(-50%, 15%);
-}
-</style>
 
 <script>
 export default {
