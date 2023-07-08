@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from "./components/Navbar.vue";
+import About from "./components/About.vue";
 import Admins from "./components/Admins.vue";
 import Timeline from "./components/Timeline.vue";
 import Slider from "./components/Slider.vue";
@@ -11,6 +12,7 @@ import Footer from "./components/Footer.vue";
 <template>
   <div class="bg-white">
     <Navbar />
+    <About />
     <Admins />
     <Timeline />
     <Slider />
