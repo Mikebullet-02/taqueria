@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col md:flex-row">
+  <div
+    class="flex flex-col md:flex-row py-5 bg-black text-red-700 font-bold text-3xl text-center"
+  >
     <div class="w-full md:w-1/2">
       <div class="carousel">
         <img
@@ -51,7 +53,7 @@ export default {
     },
   },
   mounted() {
-    setInterval(this.nextImage, 3000);
+    setInterval(this.nextImage, 5000);
   },
   methods: {
     nextImage() {

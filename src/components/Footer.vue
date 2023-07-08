@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white shadow dark:bg-gray-900">
+  <footer class="bg-white shadow dark:bg-black">
     <div
       class="w-full max-w-screen-xl mx-auto p-4 md:py-8 flex flex-col justify-center items-center"
     >
@@ -9,7 +9,7 @@
       >
         <img
           src="/src/assets/logo_bordes.png"
-          class="h-auto mr-3"
+          class="h-auto mr-3 sm:h-20"
           alt="Logo Taqueria de Wesker"
         />
       </a>
@@ -126,15 +126,14 @@
         </a>
       </div>
       <hr
-        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 w-full"
+        class="my-6 border-gray-200 mx-auto dark:border-gray-700 lg:my-8 w-full"
       />
-      <span
-        class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-      >
+      <span class="block text-sm text-gray-500 text-center dark:text-gray-400">
         &copy; {{ currentYear }}
         <a href="https://flowbite.com/" class="hover:underline"
           >La Taquería de Wesker™</a
-        >. Todos los derechos reservados.
+        >.
+        <p>Todos los derechos reservados.</p>
       </span>
     </div>
   </footer>

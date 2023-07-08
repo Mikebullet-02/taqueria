@@ -2,7 +2,7 @@
   <div
     class="flex flex-col md:flex-row py-5 bg-black text-red-700 font-bold text-3xl text-center"
   >
-    <h1>Los eventos</h1>
+    <h1 class="py-6 font-black text-4xl">Los eventos</h1>
     <div class="w-full md:w-1/2">
       <div class="carousel">
         <img
@@ -42,13 +42,13 @@ export default {
         },
         {
           image: "/src/assets/Toy_Fest/Taqueria/IMG_2005.jpg",
-          description: "La mercancía",
-          caption: "de ElFrittangas13",
+          description: "La mercancía de",
+          caption: "ElFrittangas13",
         },
         {
           image: "/src/assets/Toy_Fest/Taqueria/IMG_2009.jpg",
-          description: "La comida",
-          caption: "de La Fábrica de Dulce",
+          description: "La comida de",
+          caption: "La Fábrica de Dulce",
         },
       ],
     };
@@ -59,7 +59,7 @@ export default {
     },
   },
   mounted() {
-    setInterval(this.nextImage, 3000);
+    setInterval(this.nextImage, 5000);
   },
   methods: {
     nextImage() {
