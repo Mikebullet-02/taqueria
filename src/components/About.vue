@@ -1,6 +1,6 @@
 <template>
   <div class="container px-4 bg-black border border-gray-800 w-full">
-    <h2 class="text-3xl font-bold text-center mb-6 text-red-800">
+    <h2 class="text-5xl font-bold text-center mb-6 text-red-800 font-custom">
       Un poco de nosotros
     </h2>
     <div class="relative pb-10">
@@ -21,15 +21,15 @@
           </div>
         </div>
       </div>
-      <div class="carousel-nav mt-0 flex justify-between">
+      <div class="carousel-nav mt-0 flex justify-evenly">
         <button
-          class="carousel-prev px-6 py-4 bg-red-800 text-white font-bold rounded disabled:opacity-50 disabled:cursor-not-allowed"
+          class="carousel-prev font-custom text-2xl px-6 py-4 bg-red-800 text-white font-bold rounded disabled:opacity-50 disabled:cursor-not-allowed"
           @click="prevSlide"
         >
           Anterior
         </button>
         <button
-          class="carousel-next px-6 py-4 bg-red-800 text-white font-bold rounded disabled:opacity-50 disabled:cursor-not-allowed"
+          class="carousel-next font-custom text-2xl px-6 py-4 bg-red-800 text-white font-bold rounded disabled:opacity-50 disabled:cursor-not-allowed"
           @click="nextSlide"
         >
           Siguiente

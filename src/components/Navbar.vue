@@ -1,8 +1,7 @@
-<script setup></script>
 <template>
   <div class="bg-black top-0 z-10 sticky w-screen md:w-screen">
     <nav
-      class="pl-0 px-6 sm:py-5 mr-4 md:mr-32 mx-auto md:flex md:justify-between md:items-center sm:order-first sm:mr-16 sm:ml-32 md:ml-[20px] lg:mr-[0px] lg:ml-[55px] xl:pl-[90px] 2xl:mr-28"
+      class="pl-0 px-6 sm:py-5 mr-4 mx-auto md:flex md:justify-between md:items-center sm:order-first sm:mr-16 sm:ml-32 md:ml-[20px] lg:mr-[0px] lg:ml-[55px] xl:pl-[90px] 2xl:mr-28"
     >
       <div class="flex items-center justify-between mt-0">
         <!-- Mobile menu button -->
@@ -26,7 +25,7 @@
       </div>
       <div class="hidden md:block">
         <ul
-          class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 lg:space-x-16 xl:space-x-0 2xl:space-x-10 md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
+          class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 lg:space-x-16 xl:space-x-0 2xl:space-x-10 md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-black sm:bg-[#003368] z-0"
         >
           <img
             src="../assets/logo_bordes.png"

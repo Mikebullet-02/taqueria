@@ -22,8 +22,12 @@
         </div>-->
       </div>
     </div>
-    <button class="carousel-prev" @click="prevSlide">&#8249;</button>
-    <button class="carousel-next" @click="nextSlide">&#8250;</button>
+    <button class="carousel-prev h-full text-4xl" @click="prevSlide">
+      &#8249;
+    </button>
+    <button class="carousel-next h-full text-4xl" @click="nextSlide">
+      &#8250;
+    </button>
   </div>
 </template>
 
@@ -58,9 +62,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 0.5rem;
+  padding: 0px;
+  font-size: 2rem;
   color: white;
-  background-color: rgba(255, 255, 255, 0.2);
   border: none;
   outline: none;
   cursor: pointer;
@@ -135,7 +139,7 @@ export default {
           image: "/src/assets/Axo/IMG_1434.jpg",
         },
         {
-          name: "Beatriz Zeferino",
+          name: "Felix Tonatiuh",
           profession: "Lic. Químico Farmacéutico Biólogo",
           bio: "Rebecca Desde La Cocina",
           image: "/src/assets/taco_bordes.png",

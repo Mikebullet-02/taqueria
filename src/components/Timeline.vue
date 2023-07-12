@@ -1,8 +1,8 @@
 <template>
   <div class="flex items-center justify-center bg-black">
     <div class="container mx-auto mt-0 pl-5">
-      <h1 class="text-3xl font-bold pt-5 mb-4 text-gray-200">
-        Línea de tiempo
+      <h1 class="text-4xl font-custom font-semibold pt-5 mb-4 text-gray-200">
+        Cronología de Resident Evil
       </h1>
 
       <div class="flex justify-center">

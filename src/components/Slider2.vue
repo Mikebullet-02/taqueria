@@ -10,7 +10,7 @@
           :src="item.image"
           :alt="item.description"
           :class="{ active: index === currentIndex }"
-          class="carousel-image"
+          class="carousel-image object-cover"
         />
       </div>
     </div>

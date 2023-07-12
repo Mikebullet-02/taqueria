@@ -2,7 +2,7 @@
   <div
     class="flex flex-col md:flex-row py-5 bg-black text-red-700 font-bold text-3xl text-center"
   >
-    <h1 class="py-6 font-black text-4xl">Los eventos</h1>
+    <h1 class="py-6 font-custom text-5xl">Los eventos</h1>
     <div class="w-full md:w-1/2">
       <div class="carousel">
         <img
@@ -17,8 +17,10 @@
     </div>
     <div class="w-full md:w-1/2">
       <div class="carousel-description">
-        <h3 class="text-2xl font-bold mb-4">{{ currentImage.description }}</h3>
-        <p>{{ currentImage.caption }}</p>
+        <h3 class="text-3xl font-custom mb-4">
+          {{ currentImage.description }}
+        </h3>
+        <p class="font-custom text-4xl">{{ currentImage.caption }}</p>
       </div>
     </div>
   </div>
@@ -31,22 +33,22 @@ export default {
       currentIndex: 0,
       images: [
         {
-          image: "/src/assets/Toy_Fest/Taqueria/IMG_2006.jpg",
+          image: "/src/assets/Toy_Fest/Taqueria/IMG_2006.jpeg",
           description: "Toy Fest",
           caption: "14 de mayo de 2023",
         },
         {
-          image: "/src/assets/Toy_Fest/Taqueria/IMG_2269.jpg",
+          image: "/src/assets/Toy_Fest/Taqueria/IMG_2269.jpeg",
           description: "Collabs",
           caption: "interesantes",
         },
         {
-          image: "/src/assets/Toy_Fest/Taqueria/IMG_2005.jpg",
+          image: "/src/assets/Toy_Fest/Taqueria/IMG_2005.jpeg",
           description: "La mercancía de",
           caption: "ElFrittangas13",
         },
         {
-          image: "/src/assets/Toy_Fest/Taqueria/IMG_2009.jpg",
+          image: "/src/assets/Toy_Fest/Taqueria/IMG_2009.jpeg",
           description: "La comida de",
           caption: "La Fábrica de Dulce",
         },

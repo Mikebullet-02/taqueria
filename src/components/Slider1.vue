@@ -30,22 +30,22 @@ export default {
       currentIndex: 0,
       images: [
         {
-          image: "/src/assets/Axo/IMG_1526.jpg",
+          image: "/src/assets/Axo/IMG_1526.jpeg",
           description: "Axo Matsuri",
           caption: "Ada La Mesera y la troca",
         },
         {
-          image: "/src/assets/Axo/IMG_1473.jpg",
+          image: "/src/assets/Axo/IMG_1473.jpeg",
           description: "La Taquería junto a",
           caption: "Corporación Umbrella México",
         },
         {
-          image: "/src/assets/Axo/IMG_1376(2).jpg",
+          image: "/src/assets/Axo/IMG_1376(2).jpeg",
           description: "Todo el grupo",
           caption: "unido",
         },
         {
-          image: "/src/assets/Axo/IMG_1347.jpg",
+          image: "/src/assets/Axo/IMG_1347.jpeg",
           description: "La poderosa",
           caption: "",
         },
