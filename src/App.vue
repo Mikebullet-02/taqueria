@@ -7,6 +7,7 @@ import Slider from "./components/Slider.vue";
 import Slider1 from "./components/Slider1.vue";
 import Slider2 from "./components/Slider2.vue";
 import Footer from "./components/Footer.vue";
+import ImageGalleryModal from "./components/ImageGalleryModal.vue";
 </script>
 
 <template>
@@ -19,5 +20,6 @@ import Footer from "./components/Footer.vue";
     <Slider1 />
     <Slider2 />
     <Footer />
+    <ImageGalleryModal />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col md:flex-row py-5 bg-black text-red-700 font-bold text-3xl text-center"
+    class="flex flex-col md:flex-row py-5 bg-black text-red-700 font-bold text-3xl text-center font-custom"
   >
     <h1 class="py-6 font-custom text-5xl">Los eventos</h1>
     <div class="w-full md:w-1/2">
