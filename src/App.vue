@@ -6,6 +6,7 @@ import Timeline from "./components/Timeline.vue";
 import Slider from "./components/Slider.vue";
 import Slider1 from "./components/Slider1.vue";
 import Slider2 from "./components/Slider2.vue";
+import Historia from "./components/Historia.vue";
 import Footer from "./components/Footer.vue";
 import ImageGalleryModal from "./components/ImageGalleryModal.vue";
 </script>
@@ -13,13 +14,13 @@ import ImageGalleryModal from "./components/ImageGalleryModal.vue";
 <template>
   <div class="bg-white">
     <Navbar />
-    <About />
+    <Historia />
     <Admins />
     <Timeline />
     <Slider />
     <Slider1 />
     <Slider2 />
     <Footer />
-    <ImageGalleryModal />
+    <!-- <ImageGalleryModal /> -->
   </div>
 </template>

@@ -2,7 +2,7 @@
   <li
     class="hover:text-blue-600 mt-3 mb-3 font-regular sm:font-extrabold text-3xl sm:text-xl md:text-xl lg:text-xl 2xl:text-2xl px-5 sm:p-0 md:px-0 lg:px-0 xl:px-5 text-center sm:text-center text-red-700 font-custom"
   >
-    <a href="#about" class="inline">Nosotros</a>
+    <a href="#about" class="inline">Historia</a>
   </li>
   <li
     class="hover:text-blue-600 mt-3 mb-3 font-regular sm:font-extrabold text-3xl sm:text-xl md:text-xl lg:text-xl 2xl:text-2xl px-5 sm:p-0 md:px-0 lg:px-0 xl:px-5 text-center sm:text-center text-red-700 font-custom"
@@ -18,6 +18,16 @@
   <li
     class="hover:text-blue-600 mt-3 mb-3 font-regular sm:font-extrabold text-3xl sm:text-xl md:text-xl lg:text-xl 2xl:text-2xl px-5 sm:p-0 md:px-0 lg:px-0 xl:px-5 text-center sm:text-center text-red-700 font-custom"
   >
-    <a href="#slider" class="inline">Eventos</a>
+    <a href="#slider" class="inline">Vídeos</a>
+  </li>
+  <li
+    class="hover:text-blue-600 mt-3 mb-3 font-regular sm:font-extrabold text-3xl sm:text-xl md:text-xl lg:text-xl 2xl:text-2xl px-5 sm:p-0 md:px-0 lg:px-0 xl:px-5 text-center sm:text-center text-red-700 font-custom"
+  >
+    <a href="#slider" class="inline">Mercancía</a>
+  </li>
+  <li
+    class="hover:text-blue-600 mt-3 mb-3 font-regular sm:font-extrabold text-3xl sm:text-xl md:text-xl lg:text-xl 2xl:text-2xl px-5 sm:p-0 md:px-0 lg:px-0 xl:px-5 text-center sm:text-center text-red-700 font-custom"
+  >
+    <a href="#slider" class="inline">Galería</a>
   </li>
 </template>

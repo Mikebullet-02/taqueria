@@ -1,11 +1,8 @@
 <template>
   <div class="flex flex-col">
     <!-- Botón para abrir el modal -->
-    <button
-      @click="showModal = true"
-      class="py-2 px-4 bg-blue-500 text-white rounded-lg"
-    >
-      Abrir Galería
+    <button @click="showModal = true" class="py-2 px-4 bg-gray-500 text-white">
+      Ver Galería Completa
     </button>
 
     <!-- Modal -->
